@@ -1,13 +1,7 @@
 import {createStore} from 'redux'
+import reducer from './reducer'
 
-const reducer = storeState => storeState
-
- const initialState = {
-
-    loginName: 'MS',
-    isCreditCardHolder: true,
-
-}
-const store = createStore(reducer, initialState)
+ 
+const store = createStore(reducer)
 
 export default store
